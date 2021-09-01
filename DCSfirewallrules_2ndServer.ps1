@@ -1,8 +1,8 @@
 # DCS TCP inbound rules
-New-NetFirewallRule -DisplayName "DCS TCP Inbound" -Direction Inbound -LocalPort 10310 -Protocol TCP -Action Allow
+New-NetFirewallRule -DisplayName "DCS TCP Inbound" -Direction Inbound -LocalPort 10311 -Protocol TCP -Action Allow
 
 # DCS UDP inbound rules
-New-NetFirewallRule -DisplayName "DCS UDP Inbound" -Direction Inbound -LocalPort 10310 -Protocol UDP -Action Allow
+New-NetFirewallRule -DisplayName "DCS UDP Inbound" -Direction Inbound -LocalPort 10312 -Protocol UDP -Action Allow
 
 # DCS WebGUI TCP inbound  rules
 New-NetFirewallRule -DisplayName "DCS WebGUI TCP Inbound" -Direction Inbound -LocalPort 8090 -Protocol TCP -Action Allow
@@ -18,3 +18,5 @@ New-NetFirewallRule -DisplayName "DCS SRS TCP1" -Direction Inbound -LocalPort 50
 
 # DCS SRS TCP2
 #New-NetFirewallRule -DisplayName "DCS SRS TCP2" -Direction Inbound -LocalPort 5005 -Protocol TCP -Action Allow
+
+New-NetFirewallRule -DisplayName "LOTATC TCP Inbound" -Direction Inbound -LocalPort 10310 -Protocol TCP -Action Allow
