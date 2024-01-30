@@ -24,3 +24,9 @@ New-NetFirewallRule -DisplayName "DCS SRS TCP1" -Direction Inbound -LocalPort 50
 
 # DCS SRS TCP2
 New-NetFirewallRule -DisplayName "DCS SRS TCP2" -Direction Inbound -LocalPort 5003 -Protocol TCP -Action Allow
+
+# DCS Olympus Mod
+New-NetFirewallRule -DisplayName "Olympus Mod" -Direction Inbound -LocalPort 3002 -Protocol TCP -Action Allow
+
+# DCS Olympus Mod
+New-NetFirewallRule -DisplayName "Olympus Mod" -Direction Inbound -LocalPort 3002 -Protocol UDP -Action Allow
