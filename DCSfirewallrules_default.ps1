@@ -4,6 +4,12 @@ New-NetFirewallRule -DisplayName "DCS TCP Inbound" -Direction Inbound -LocalPort
 # DCS UDP inbound rules
 New-NetFirewallRule -DisplayName "DCS UDP Inbound" -Direction Inbound -LocalPort 10308 -Protocol UDP -Action Allow
 
+# DCS UDP inbound rules
+New-NetFirewallRule -DisplayName "DCS Voice Chat" -Direction Inbound -LocalPort 10309 -Protocol UDP -Action Allow
+
+# DCS UDP inbound rules
+New-NetFirewallRule -DisplayName "DCS Voice Chat" -Direction Inbound -LocalPort 10309 -Protocol TCP -Action Allow
+
 # DCS WebGUI TCP inbound  rules
 New-NetFirewallRule -DisplayName "DCS WebGUI TCP Inbound" -Direction Inbound -LocalPort 8088 -Protocol TCP -Action Allow
 
